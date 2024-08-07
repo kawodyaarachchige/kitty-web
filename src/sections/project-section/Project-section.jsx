@@ -1,8 +1,9 @@
 import projectImage from '../../assets/project.jpeg';
+
 const projects = [
     {
         title: 'Project One',
-        description: 'A brief description of Project One. This project involved building a web application using React and Node.js.',
+        description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.',
         imageUrl: projectImage,
         link: '#',
         githubLink: '#',
@@ -11,7 +12,7 @@ const projects = [
     },
     {
         title: 'Project Two',
-        description: 'A brief description of Project Two. This project was focused on designing a user-friendly interface with Figma and implementing it with HTML/CSS.',
+        description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.',
         imageUrl: projectImage,
         link: '#',
         githubLink: '#',
@@ -20,7 +21,7 @@ const projects = [
     },
     {
         title: 'Project Three',
-        description: 'A brief description of Project Three. This project included developing a REST API with Express and integrating it with a frontend application.',
+        description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum..',
         imageUrl: projectImage,
         link: '#',
         githubLink: '#',
@@ -45,7 +46,7 @@ const ProjectsSection = () => {
                             <div className="flex gap-2 mb-2">
                                 <a
                                     href={project.githubLink}
-                                    className="bg-pink-600 text-white py-2 px-4 rounded-lg text-center font-semibold hover:bg-pink-700 transition-colors"
+                                    className="bg-pink-600 text-white py-2 px-4 rounded-lg text-center font-semibold transition-transform transform hover:scale-105 hover:bg-pink-700"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
@@ -53,7 +54,7 @@ const ProjectsSection = () => {
                                 </a>
                                 <a
                                     href={project.demoLink}
-                                    className="bg-pink-600 text-white py-2 px-4 rounded-lg text-center font-semibold hover:bg-pink-700 transition-colors"
+                                    className="bg-pink-600 text-white py-2 px-4 rounded-lg text-center font-semibold transition-transform transform hover:scale-105 hover:bg-pink-700"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
