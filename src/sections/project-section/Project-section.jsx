@@ -1,5 +1,4 @@
 import projectImage from '../../assets/project.jpeg';
-
 const projects = [
     {
         title: 'Project One',
@@ -36,17 +35,40 @@ const ProjectsSection = () => {
             <h2 className="text-4xl font-bold text-pink-600 mb-8 text-center">Projects</h2>
             <div className="flex flex-wrap justify-center gap-8">
                 {projects.map((project, index) => (
-                    <div key={index} className="w-full max-w-xs bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl">
-                        <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
-                        <div className="p-6">
-                            <h3 className="text-xl font-semibold text-gray-800 mb-2">{project.title}</h3>
-                            <p className="text-gray-600 mb-4">{project.description}</p>
+                    <div key={index} className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                        <img className="w-full" src={project.imageUrl} alt={project.title} />
+                        <div className="px-6 py-4">
+                            <div className="font-bold text-xl mb-2">{project.title}</div>
+                            <p className="text-gray-600 text-base">{project.description}</p>
+                        </div>
+                        <div className="px-6 py-4">
                             <div className="flex gap-2 mb-2">
-                                <a href={project.githubLink} className="bg-pink-600 text-white py-2 px-4 rounded-lg text-center font-semibold hover:bg-pink-700 transition-colors" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <a href={project.demoLink} className="bg-pink-600 text-white py-2 px-4 rounded-lg text-center font-semibold hover:bg-pink-700 transition-colors" target="_blank" rel="noopener noreferrer">Demo</a>
+                                <a
+                                    href={project.githubLink}
+                                    className="bg-pink-600 text-white py-2 px-4 rounded-lg text-center font-semibold hover:bg-pink-700 transition-colors"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    GitHub
+                                </a>
+                                <a
+                                    href={project.demoLink}
+                                    className="bg-pink-600 text-white py-2 px-4 rounded-lg text-center font-semibold hover:bg-pink-700 transition-colors"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Demo
+                                </a>
                             </div>
                             <p className="text-gray-500 text-sm">Viewed: {project.viewDate}</p>
-                            <a href={project.link} className="block mt-4 text-pink-600 font-semibold hover:underline" target="_blank" rel="noopener noreferrer">View Project</a>
+                            <a
+                                href={project.link}
+                                className="block mt-4 text-pink-600 font-semibold hover:underline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View Project
+                            </a>
                         </div>
                     </div>
                 ))}

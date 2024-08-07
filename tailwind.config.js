@@ -18,8 +18,14 @@ export default {
           '100%': { transform: 'translateX(-100%)' },
         },
       },
+      pulse: {
+        '0%': { transform: 'scale(1)' },
+        '50%': { transform: 'scale(1.05)' },
+        '100%': { transform: 'scale(1)' },
+      },
       animation: {
         marquee: 'marquee 18s linear infinite',
+        pulse: 'pulse 1s infinite',
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif']
