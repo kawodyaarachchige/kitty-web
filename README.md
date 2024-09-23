@@ -1,6 +1,5 @@
-
 <h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=80&duration=4000&lines=My+Portfolio+Website+✨&color=FF69B4" />
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=80&duration=4000&lines=My+Portfolio+Website+💻✨&color=FF69B4" />
 </h1>
 
 I'm thrilled to announce the launch of my first portfolio website, built using React and Tailwind CSS! This project marks a significant milestone in my journey as a developer, and I am excited to share it with the world. Through this website, I aim to showcase my skills, experience, and projects as I continue to pursue my passion for full-stack development.
